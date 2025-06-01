@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://bhelpuripanda.github.io/TYPEGAME/",
+  "homepage": "https://bhelpuripanda.github.io/typegame-frontend/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
