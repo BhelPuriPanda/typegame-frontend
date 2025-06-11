@@ -18,7 +18,7 @@ const Leaderboard = () => {
   }, []);
 
   return (
-    <div className="bg-white shadow-lg rounded-xl p-4 max-w-3xl w-full mx-auto mt-10 drop-shadow-xl drop-shadow-indigo-500/75">
+    <div className="bg-white shadow-lg rounded-xl p-4 max-w-2xl w-full mx-auto mt-10 drop-shadow-xl drop-shadow-indigo-500/75">
       <h2 className="text-2xl font-semibold mb-4">🏆 Leaderboard</h2>
       <table className="w-full table-auto border-collapse">
         <thead>

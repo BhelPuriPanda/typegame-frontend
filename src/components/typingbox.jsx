@@ -68,7 +68,7 @@ const TypingBox = () => {
 
 
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 max-w-2xl w-full mx-auto mt-10 drop-shadow-xl drop-shadow-indigo-500/75"> 
+    <div className="bg-white shadow-lg rounded-xl p-6 max-w-xl w-full mx-auto mt-10 drop-shadow-xl drop-shadow-indigo-500/75"> 
       <h2 className="text-2xl font-semibold mb-4 text-center">Start Typing and Accept the Challenge</h2>
       <div className=" text-gray-800 bg-black p-4 rounded mb-4 text-lg leading-relaxed">
         {targetText.split('').map((char, idx) => {
