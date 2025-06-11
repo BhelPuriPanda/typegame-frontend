@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
 
 const TypingBox = () => {
-  const paragraphs = [
-    "The quick brown fox jumps over the lazy dog.",
-    "Typing speed is measured in words per minute.",
-    "React makes building user interfaces a breeze.",
-    "Practice daily to improve your typing accuracy.",
-    "Tailwind CSS helps you style components quickly."
-  ];
+ const paragraphs = [
+  "The quick brown fox jumps over the lazy dog near the calm river, where tall grass sways in the wind. Birds sing in the distance, and the sun sets slowly behind the hills, painting the sky orange and pink.",
+  
+  "Typing speed is measured in words per minute and depends on accuracy and consistency. Daily practice helps improve muscle memory and finger placement. Over time, your typing becomes smoother, faster, and more accurate, making you a more efficient computer user overall.",
+  
+  "React is a JavaScript library that helps developers build user interfaces by using components. Each component manages its own state, making apps modular and easier to maintain. With hooks and the virtual DOM, performance and development speed improve significantly in modern web projects.",
+  
+  "Practice typing every day to improve your speed and accuracy. Focus on proper finger placement and minimizing errors. As your muscle memory builds, you'll type faster without looking at the keyboard. Consistency and patience are key to becoming a confident, fluent typist.",
+  
+  "Tailwind CSS allows developers to style websites using utility classes. These classes make it easy to design responsive layouts without writing custom CSS. By combining small utilities, you build complex designs efficiently. It’s fast, flexible, and widely adopted in modern frontend development workflows."
+];
+
+
 
   const [targetText, setTargetText] = useState('');
   const [typedText, setTypedText] = useState('');
@@ -62,9 +68,9 @@ const TypingBox = () => {
 
 
   return (
-    <div className="bg-gray-100 shadow-lg rounded-xl p-6 max-w-3xl w-full mx-auto mt-10 drop-shadow-xl drop-shadow-indigo-500/75"> 
-
-      <div className=" text-gray-800 bg-gray-800 p-4 rounded mb-4 text-lg leading-relaxed">
+    <div className="bg-white shadow-lg rounded-xl p-6 max-w-2xl w-full mx-auto mt-10 drop-shadow-xl drop-shadow-indigo-500/75"> 
+      <h2 className="text-2xl font-semibold mb-4 text-center">Start Typing and Accept the Challenge</h2>
+      <div className=" text-gray-800 bg-black p-4 rounded mb-4 text-lg leading-relaxed">
         {targetText.split('').map((char, idx) => {
           let color;
           if (idx < typedText.length) {
@@ -83,7 +89,7 @@ const TypingBox = () => {
 
       <textarea
         className="w-full  border border-gray-500 rounded p-2 text-lg focus:outline-blue-500"
-        rows="1"
+        rows="5"
         placeholder="Start typing here..."
         value={typedText}
         onChange={handleTyping}
